@@ -1,0 +1,80 @@
+<!DOCtype html>
+<html>
+<head>
+<title>project2</title>
+<meta charset="utf-8">
+</head>
+<body background="/home/raman/Downloads/image4.jpg">
+<div id=red onclick="paintColor='red';"></div>
+<div id=yellow onclick="paintColor='yellow';"></div>
+<div id=green onclick="paintColor='green';"></div>
+<div id=blue onclick="paintColor='blue';"></div>
+<div id=orange onclick="paintColor='orange';"></div>
+<div id=brown onclick="paintColor='brown';"></div>
+<div id=base onclick="this.style.backgroundColor=paintColor;">
+</div>
+<style>
+#red{
+	width:30px;
+	height:30px;
+	background:red;
+	margin:10px;
+	border:2px solid black;
+	display:inline-block;}
+#yellow{
+	width:30px;
+	height:30px;
+	background:yellow;
+	margin:10px;
+	border:2px solid black;
+	display:inline-block;}
+#green{
+	width:30px;
+	height:30px;
+	background:green;
+	margin:10px;
+	border:2px solid black;
+	display:inline-block;}
+#blue{
+	width:30px;
+	height:30px;
+	background:blue;
+	margin:10px;	
+	border:2px solid black;
+	display:inline-block;}
+#orange{
+	width:30px;
+	height:30px;
+	background:orange;
+	margin:10px;
+	border:2px solid black;
+	display:inline-block;}
+#brown{
+	width:30px;
+	height:30px;
+	background:brown;
+	margin:10px;
+	border:2px solid black;
+	display:inline-block;}
+#base{
+	width:1220px;
+	height:550px;
+	border:2px solid black;
+	margin:10px;}
+.box{
+	width:30px;
+	height:30px;
+	background:transparent;
+	margin:2px;
+	border:2px solid black;
+	display:inline-block;}
+</style>
+<script>
+var paintColor ='black';
+for(var i=0;i<416;i++)
+{
+	document.getElementById('base').innerHTML+="<div class='box' onmouseover='this.style.backgroundColor=paintColor;'></div>";
+}
+</script>
+</body>
+</html>
